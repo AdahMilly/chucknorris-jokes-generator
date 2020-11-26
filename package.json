@@ -1,0 +1,28 @@
+{
+  "name": "chucknorris-jokes-generator",
+  "version": "1.0.0",
+  "description": "Fetching chuknorris jokes generator API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev" : "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdahMilly/chucknorris-jokes-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdahMilly/chucknorris-jokes-generator/issues"
+  },
+  "homepage": "https://github.com/AdahMilly/chucknorris-jokes-generator#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
