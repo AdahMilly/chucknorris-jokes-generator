@@ -3,13 +3,9 @@ const  axios = require("axios");
 
 const app = express();
 
-const getCategories = async () => {
-    try {
-      return await axios.get('https://api.chucknorris.io/jokes/categories')
-    } catch (error) {
-      console.error(error)
-    }
-  }
+// Routes
+app.use('./categories', require('./routes/categories'));
+app.use('./jokes', require('./routes/jokes'));
 
 const PORT = process.env.PORT || 5001;
 
