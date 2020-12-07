@@ -1,5 +1,4 @@
-const express = require("express");
-const router = express.Router();
+const axios = require('axios')
 
 const getJokes = async () => {
     try {
@@ -9,4 +8,3 @@ const getJokes = async () => {
     }
   }
 
-module.exports = router;

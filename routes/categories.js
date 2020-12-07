@@ -1,12 +1,12 @@
-const express = require("express");
-const router = express.Router();
+const axios = require('axios')
 
-const getCategories = async () => {
+const getCategories = async (req, res) => {
     try {
-      return await axios.get('https://api.chucknorris.io/jokes/categories')
+      const results = await axios.get('https://api.chucknorris.io/jokes/categories')
+      console.log(results.data)
+      res.send(results.data)
     } catch (error) {
       console.error(error)
     }
   }
-
-module.exports = router;
+  module.exports = getCategories
