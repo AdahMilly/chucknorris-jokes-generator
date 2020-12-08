@@ -1,13 +1,12 @@
 const express = require("express");
 const getCategories = require('./routes/categories')
+const getJokes = require('./routes/jokes')
 
 const app = express();
 
-// arrow functions
 // Routes
-app.use('/', async (req, res) => res.send({text: "Welcome to CN"}));
 app.use('/categories',  getCategories);
-// app.use('/jokes', require('./routes/jokes'));
+app.use('/jokes', getJokes);
 
 const PORT = process.env.PORT || 5001;
 
